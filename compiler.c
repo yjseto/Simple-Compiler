@@ -11,9 +11,9 @@ static unsigned symbolHash(char *symbol) {
 
 	while(ch = *symbol++) {
 		hash = hash * 9 ^ ch;
-
-		return hash;
 	}
+	return hash;
+	
 }
 
 struct symbol *lookUp(char *symbol) {

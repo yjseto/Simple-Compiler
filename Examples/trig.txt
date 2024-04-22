@@ -1,0 +1,21 @@
+function trig (x, y, z);
+var x: integer;
+var y: integer;
+var z: integer;
+
+
+x = 3.14/2;
+
+z = sin(x);
+print(z);
+
+z = cos(3.14);
+print(z);
+
+z = tan(0);
+print(z);
+
+
+end;
+
+

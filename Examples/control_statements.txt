@@ -1,0 +1,26 @@
+function control (i);
+var i: integer;
+
+
+while i < 6 do {print(i); i = i + 1 };
+
+if 5 > 0 {
+    print(1)
+}
+
+else {
+    print(0)
+};
+
+if 5 < 0 {
+    print(1)
+}
+
+else {
+    print(0)
+};
+
+
+end;
+
+

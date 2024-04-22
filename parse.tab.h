@@ -34,8 +34,8 @@
 /* Undocumented macros, especially those whose name start with YY_,
    are private implementation details.  Do not rely on them.  */
 
-#ifndef YY_YY_GRAMMAR_TAB_H_INCLUDED
-# define YY_YY_GRAMMAR_TAB_H_INCLUDED
+#ifndef YY_YY_PARSE_TAB_H_INCLUDED
+# define YY_YY_PARSE_TAB_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -51,26 +51,25 @@ extern int yydebug;
   {
     NUMBER = 258,
     SYMBOL = 259,
-    PROGRAM = 260,
+    FUNCTION = 260,
     VAR = 261,
     OF = 262,
     INTEGER = 263,
     REAL = 264,
-    BGN = 265,
-    END = 266,
-    IF = 267,
-    THEN = 268,
-    ELSE = 269,
-    WHILE = 270,
-    DO = 271,
-    DOTS = 272,
-    PRINT = 273,
-    SIN = 274,
-    COS = 275,
-    TAN = 276,
-    STD_TYPE = 277,
-    CMP = 278,
-    UMINUS = 279
+    END = 265,
+    IF = 266,
+    THEN = 267,
+    ELSE = 268,
+    WHILE = 269,
+    DO = 270,
+    DOTS = 271,
+    PRINT = 272,
+    SIN = 273,
+    COS = 274,
+    TAN = 275,
+    STD_TYPE = 276,
+    CMP = 277,
+    UMINUS = 278
   };
 #endif
 
@@ -78,7 +77,7 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 8 "grammar.y"
+#line 8 "parse.y"
 
 	struct ast *a;
 	double d;
@@ -87,7 +86,7 @@ union YYSTYPE
 	int fn;
 	char typeC;
 
-#line 91 "grammar.tab.h"
+#line 90 "parse.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;
@@ -100,4 +99,4 @@ extern YYSTYPE yylval;
 
 int yyparse (void);
 
-#endif /* !YY_YY_GRAMMAR_TAB_H_INCLUDED  */
+#endif /* !YY_YY_PARSE_TAB_H_INCLUDED  */

@@ -1,7 +1,7 @@
 %option noyywrap
 %{
 #include "compiler.h"
-#include "grammar.tab.h"
+#include "parse.tab.h"
 %}
 
 %%
@@ -33,14 +33,12 @@
 "integer"	{ yylval.typeC = 'a'; return STD_TYPE; }
 "real"		{ yylval.typeC = 'b'; return STD_TYPE; }
 
-"program"	{ return PROGRAM; }
+"function"	{ return FUNCTION; }
 "var"	{ return VAR; }
 "of"	{ return OF; }
-"begin"	{ return BGN; }
 "end"	{ return END; }
 
 "if"	{ return IF; }
-"then"	{ return THEN; }
 "else"	{ return ELSE; }
 "while"	{ return WHILE; }
 "do"	{ return DO; }
